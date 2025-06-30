@@ -1,0 +1,22 @@
+{
+  // Custom instructions: https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": ".github/instructions/code-review.instructions.md",
+    },
+    {
+      "file": ".github/instructions/typescript-react.instructions.md",
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": ".github/instructions/commit-message.instructions.md",
+    }
+  ],
+  // Prompt files (experimental): https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental
+  "chat.promptFiles": true,
+  "chat.promptFilesLocations": {
+    ".github/prompts": true
+  },
+}
