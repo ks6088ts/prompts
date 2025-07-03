@@ -19,4 +19,8 @@
   "chat.promptFilesLocations": {
     ".github/prompts": true
   },
+  // Chat modes: https://code.visualstudio.com/docs/copilot/chat/chat-modes
+  "chat.modeFilesLocations": {
+    ".github/chatmodes": true
+  },
 }
