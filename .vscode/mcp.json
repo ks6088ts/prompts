@@ -15,14 +15,13 @@
         // "--vision"
       ]
     },
+    "executeautomation.playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"]
+    },
     "azure": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@azure/mcp@latest",
-        "server",
-        "start"
-      ]
+      "args": ["-y", "@azure/mcp@latest", "server", "start"]
     },
     "awslabs.aws-documentation-mcp-server": {
       "command": "docker",
@@ -35,23 +34,15 @@
         "--env",
         "AWS_DOCUMENTATION_PARTITION=aws",
         "mcp/aws-documentation:latest"
-      ],
+      ]
     },
     "terraform": {
       "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "hashicorp/terraform-mcp-server"
-      ]
+      "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"]
     },
     "TypeSpec MCP Server": {
       "command": "npx",
-      "args": [
-        "-y",
-        "mcp-server-typespec@latest"
-      ]
-    },
+      "args": ["-y", "mcp-server-typespec@latest"]
+    }
   }
 }
